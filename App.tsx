@@ -23,13 +23,11 @@ const HomeScreen = () => (
   </Layout>
 )
 
-export default function App() {
-  return (
-    <>
-      <IconRegistry icons={EvaIconsPack} />
-      <ApplicationProvider {...eva} theme={{ ...eva.dark, ...theme }}>
-        <HomeScreen />
-      </ApplicationProvider>
-    </>
-  );
-}
+export default () => (
+  <>
+    <IconRegistry icons={EvaIconsPack} />
+    <ApplicationProvider {...eva} theme={{ ...eva.dark, ...theme }}>
+      <HomeScreen />
+    </ApplicationProvider>
+  </>
+);
