@@ -1,9 +1,8 @@
 
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text } from 'react-native';
 import * as eva from '@eva-design/eva';
-import { ApplicationProvider, Layout } from '@ui-kitten/components';
+import { ApplicationProvider, Layout, Text } from '@ui-kitten/components';
 
 export default function App() {
   return (
