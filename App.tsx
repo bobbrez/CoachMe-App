@@ -14,17 +14,21 @@ const LoginButton = () => (
   <Button style={{ marginTop: 10 }} accessoryLeft={LoginIcon}>Log In</Button>
 );
 
+const HomeScreen = () => (
+  <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+    <Text category='h3'>Welcome to CoachMe</Text>
+    <Text>Log in to get started</Text>
+    <LoginButton />
+    <StatusBar style="auto" />
+  </Layout>
+)
+
 export default function App() {
   return (
     <>
       <IconRegistry icons={EvaIconsPack} />
       <ApplicationProvider {...eva} theme={{ ...eva.dark, ...theme }}>
-        <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-          <Text category='h3'>Welcome to CoachMe</Text>
-          <Text>Log in to get started</Text>
-          <LoginButton />
-          <StatusBar style="auto" />
-        </Layout>
+        <HomeScreen />
       </ApplicationProvider>
     </>
   );
