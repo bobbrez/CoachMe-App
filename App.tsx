@@ -10,7 +10,7 @@ const LoginIcon = (props : IconProps) => (
 );
 
 const LoginButton = () => (
-  <Button accessoryLeft={LoginIcon}>Log In</Button>
+  <Button style={{ marginTop: 10 }} accessoryLeft={LoginIcon}>Log In</Button>
 );
 
 export default function App() {
