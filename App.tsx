@@ -2,10 +2,10 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import * as eva from '@eva-design/eva';
-import { ApplicationProvider, Layout, Text, Button, IconRegistry, Icon } from '@ui-kitten/components';
+import { ApplicationProvider, Layout, Text, Button, IconRegistry, Icon, IconProps } from '@ui-kitten/components';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 
-const LoginIcon = (props) => (
+const LoginIcon = (props : IconProps) => (
   <Icon name='log-in-outline' {...props} />
 );
 
