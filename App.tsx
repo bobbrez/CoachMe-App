@@ -8,7 +8,8 @@ export default function App() {
   return (
     <ApplicationProvider {...eva} theme={{ ...eva.dark }}>
       <Layout style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Open up App.tsx to start working on your app!</Text>
+        <Text category='h3'>Welcome to CoachMe</Text>
+        <Text>Log in to get started</Text>
         <StatusBar style="auto" />
       </Layout>
     </ApplicationProvider>
